@@ -1,0 +1,17 @@
+{
+  "name": "express-starter-project",
+  "version": "1.0.0",
+  "description": "Basic express starter project",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Tony Pettigrew",
+  "license": "ISC",
+  "dependencies": {
+    "cookie-parser": "^1.4.3",
+    "ejs": "^2.6.1",
+    "express": "^4.16.3",
+    "helmet": "^3.14.0"
+  }
+}
