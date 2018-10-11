@@ -1,8 +1,9 @@
 const express = require('express');
-const app = express();
 const helmet = require('helmet');
 const cookieParser = require('cookie-parser');
 const path = require('path');
+
+const app = express();
 
 // Helps to protect headers
 app.use(helmet());
@@ -28,7 +29,7 @@ app.get('/', indexRoute);
 // Set PORT to be either the env variable or 3000
 const PORT = process.env.PORT || 3000;
 
-// Server is listening for requests on port 3000 in dev environment
+// Server is listening for http messages on port 3000 in dev environment
 app.listen(PORT, () => {
   console.log(`Server is running on ${PORT}`);
 });
