@@ -24,7 +24,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 const indexRoute = require('./routes/index');
 
 // Use express.Router object, indexRoute for the home route
-app.get('/', indexRoute);
+app.use('/', indexRoute);
 
 // Set PORT to be either the env variable or 3000
 const PORT = process.env.PORT || 3000;
